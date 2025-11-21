@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_qssi.mk
+    $(LOCAL_DIR)/omni_OP4A47.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_qssi-user \
-    omni_qssi-userdebug \
-    omni_qssi-eng
+    omni_OP4A47-user \
+    omni_OP4A47-userdebug \
+    omni_OP4A47-eng

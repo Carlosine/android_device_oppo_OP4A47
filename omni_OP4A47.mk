@@ -12,18 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from qssi device
-$(call inherit-product, device/qualcomm/qssi/device.mk)
+# Inherit from OP4A47 device
+$(call inherit-product, device/oppo/OP4A47/device.mk)
 
-PRODUCT_DEVICE := qssi
-PRODUCT_NAME := omni_qssi
-PRODUCT_BRAND := qti
-PRODUCT_MODEL := qssi system image for arm64
-PRODUCT_MANUFACTURER := qualcomm
+PRODUCT_DEVICE := OP4A47
+PRODUCT_NAME := omni_OP4A47
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := PDPM00
+PRODUCT_MANUFACTURER := oppo
 
-PRODUCT_GMS_CLIENTID_BASE := android-qti
+PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="qssi-user 11 RKQ1.200710.002 1638461404397 release-keys"
+    PRIVATE_BUILD_DESC="PDPM00-user 11 RKQ1.200710.002 1638461404397 release-keys"
 
-BUILD_FINGERPRINT := qti/qssi/qssi:11/RKQ1.200710.002/1638461404397:user/release-keys
+BUILD_FINGERPRINT := OPPO/PDPM00/OP4A47:11/RKQ1.200710.002/1638461404397:user/release-keys

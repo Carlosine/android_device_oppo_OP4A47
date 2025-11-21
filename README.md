@@ -1,4 +1,4 @@
-# Android device tree for qti qssi system image for arm64 (qssi)
+# Android device tree for OPPO PDPM00 (OP4A47)
 
 ```
 #
