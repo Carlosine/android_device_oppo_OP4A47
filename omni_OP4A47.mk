@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from OP4A47 device
 $(call inherit-product, device/oppo/OP4A47/device.mk)
@@ -24,6 +24,6 @@ PRODUCT_MANUFACTURER := oppo
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="PDPM00-user 11 RKQ1.200710.002 1638461404397 release-keys"
+    PRIVATE_BUILD_DESC="PDPM00-user 12 RKQ1.211103.002 Q.e70b06_13c2_13c3 release-key"
 
-BUILD_FINGERPRINT := OPPO/PDPM00/OP4A47:11/RKQ1.200710.002/1638461404397:user/release-keys
+BUILD_FINGERPRINT := OPPO/PDPM00/OP4A47:12/RKQ1.211103.002/Q.e70b06_13c2_13c3:user/release-keys

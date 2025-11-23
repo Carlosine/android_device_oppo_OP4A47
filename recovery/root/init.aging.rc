@@ -17,10 +17,11 @@ service sbltest /system/bin/sbltestreport
     oneshot
     seclabel u:r:recovery:s0
 
-on property:sys.oplus_ftm_mode=998
+on property:sys.oppo_ftm_mode=998
     start servicemanager
-on property:sys.oplus_ftm_mode=998 && property:init.svc.servicemanager=running
+on property:sys.oppo_ftm_mode=998 && property:init.svc.servicemanager=running
     wait /cache/factory/agingtest_ui.log
+    chmod +x /sbin/
     start dramaging
     start flashaging
     start sbltest
